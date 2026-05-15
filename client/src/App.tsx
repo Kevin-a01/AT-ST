@@ -1,17 +1,14 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router";
-import StartPage from "./pages/StartPage";
-import SignUpPage from "./pages/SignUpPage";
+import { Show, SignInButton, SignUpButton } from "@clerk/react";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<StartPage />} />
-          <Route path="/sign-up" element={<SignUpPage />} />
-        </Routes>
-      </BrowserRouter>
+      <Show when="signed-out">
+        <LandingPage />
+      </Show>
     </>
   );
 }

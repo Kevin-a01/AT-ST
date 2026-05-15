@@ -7,7 +7,7 @@ export default function SignUpPage() {
 
   return (
     <>
-      <div className="p-3 my-20">
+      <div className="p-3 my-5">
         <div className="bg-white py-10 rounded-2xl shadow-xl md:w-xl md:mx-auto">
           <div className="bg-gray-100 mx-auto w-14 h-14 rounded-full flex justify-center items-center mb-5">
             <SquareUser className="text-purple-600" size={30} />
